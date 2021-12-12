@@ -1,3 +1,4 @@
+/*МЕНЮ*/
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +45,7 @@ nav {
 .topnav .icon {
   display: none;
 }
+/*MY COMPANY*/
 main {
   display: flex;
   flex-direction: column;
@@ -95,6 +97,7 @@ main .main__about {
   min-width: 100%;
 }
 
+/*TAKE A LOOK AT OUR WORK*/
 .main_work {
   background: #000;
   text-align: center;
@@ -103,6 +106,7 @@ main .main__about {
 
 .main_work h1 {
   margin-bottom: 50px;
+  padding: 0 0 30px 0;
   border-bottom: 3px solid #fcac45;
   color: #fff;
 }
@@ -117,12 +121,14 @@ main .main__about {
 .main_work img:hover {
   opacity: 0.9;
 }
+/*CONTACT FORM*/
 .contact_from {
   padding: 100px 0 100px 0;
 }
 .contact_from h1 {
   text-align: center;
   font-size: 35px;
+  padding: 0 0 30px 0;
   border-bottom: 3px solid #fcac45;
   margin-bottom: 50px;
 }
@@ -169,6 +175,70 @@ input[type="submit"] {
   margin-top: 20px;
 }
 
+/*OUR SERVICE*/
+.service_cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+
+.main__services h1 {
+  margin-bottom: 50px;
+  border-bottom: 3px solid #fcac45;
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+.main__services p {
+  color: #6c6c6c;
+  margin-bottom: 100px;
+}
+
+.servise_card h4 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*SOME OF OUR CLIENTS*/
+.main__clients {
+  background: #000;
+  padding: 100px 0 205px 0;
+  color: #fff;
+  text-align: center;
+}
+.main__clients h1 {
+  margin-bottom: 70px;
+  border-bottom: 3px solid #fcac45;
+  padding: 0 0 30px 0;
+}
+.main__clients img {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.main__clients img:hover{
+  opacity: 0.9;
+}
+
+
+/*footer*/
+footer{
+  width: 100%;
+  height: auto;
+  background: #222222;
+  padding: 30px 0 30px 0;
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+.social img{
+  margin-left:12px;
+}
+.social img:hover{
+  opacity: 0.9;
+}
+
+/*Адаптация*/
 @media screen and (max-width: 1200px) {
   nav {
     margin-left: 20%;
@@ -245,5 +315,20 @@ input[type="submit"] {
   }
   .line3 img:not(:first-child) {
     display: none;
+  }
+  .service_cards {
+    grid-template-columns: auto;
+  }
+  .contact_wrapper {
+    width: 80%;
+  }
+  .form_inputs {
+    flex-direction: column;
+  }
+  input {
+    width: 100%;
+  }
+  .button_block {
+    justify-content: center;
   }
 }
